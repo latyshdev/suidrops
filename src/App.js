@@ -92,7 +92,7 @@ export default function Home() {
             // eslint-disable-next-line no-console
             console.log('NFT id', nftID);
             setMsgNotice(
-                `NFT successfully created. ${nftID ? `ID: ${nftID}` : ''}`
+                `NFT successfully created.${nftID ? `ID: ${nftID}` : ''}`
             );
         } catch (e) {
             setMsgNotice(e);
@@ -142,7 +142,7 @@ export default function Home() {
                     <h6>It seems Sui Wallet is not installed.</h6>
                 ) : null}
                 {msgNotice ? (
-                    <div className={(msgNotice, null, 4 === `NFT successfully created. ` || msgNotice.message === `NFT successfully created. `) ? "" : "error"} >
+                    <div className={(msgNotice, null, 4 === `NFT successfully created.` || msgNotice.message === `NFT successfully created.`) ? "" : "error"} >
                         <pre>
                             {/* {console.log(msgNotice)} */}
                             {msgNotice.message ||
