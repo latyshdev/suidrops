@@ -81,10 +81,7 @@ export default function Home() {
             const result = await suiWallet.executeMoveCall({
                 packageObjectId: '0x15b103fbe7327a568b6a0b6e51ac13faa3c08879',
                 module: 'testnet_nft',
-                function: 'mint_to_sender',
-                typeArguments: [],
-                arguments: [],
-                gasBudget: 10000,
+                function: 'mint_to_sender'
             });
             const nftID =
                 result?.EffectResponse?.effects?.created?.[0]?.reference
