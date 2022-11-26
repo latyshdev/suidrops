@@ -142,7 +142,7 @@ export default function Home() {
                     <h6>It seems Sui Wallet is not installed.</h6>
                 ) : null}
                 {msgNotice ? (
-                    <div className={(msgNotice, null, 4 === `NFT successfully created.` || msgNotice.message === `NFT successfully created.`) ? "" : "error"} >
+                    <div className={(msgNotice === `NFT successfully created.` || msgNotice.message === `NFT successfully created.`) ? "" : "error"} >
                         <pre>
                             {/* {console.log(msgNotice)} */}
                             {msgNotice.message ||
